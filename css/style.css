@@ -1,8 +1,8 @@
 *{
-    padding: 0%;
+    /*padding: 0%;*/
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 1rem;
     height: 100%;
 }
@@ -12,3 +12,43 @@ body, header, main, footer {
     min-width: 250px;
     margin: 0.5rem ;
 }
+
+body {
+    background-color: darkslategrey;
+    font-family:'Oxygen-Regular';
+    line-height: normal;
+    
+}
+
+
+main {
+    min-height: 180px;
+}
+
+main>div {
+    border: 2px blue solid;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 63%;
+}
+
+main>aside {
+    border: 4px blue double;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: right;
+    width: 33%;
+    min-width: 25%;
+
+}
+
+.secciones {
+    border: 3px darkgoldenrod double;
+    min-height: 150px;
+    min-width: 250px;
+    margin: 0.5rem ;
+}
+
