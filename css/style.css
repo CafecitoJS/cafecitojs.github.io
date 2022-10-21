@@ -8,15 +8,21 @@ html {
 }
 body, header, main, footer {
     border: 3px darkred solid;
+    background-color: rgb(255, 255, 255);
     min-height: 150px;
     min-width: 250px;
     margin: 0.5rem ;
 }
 
+
+header {
+    box-shadow: 0 0 0.5rem;
+}
+
 body {
-    background-color: rgb(245, 240, 240);
-    
-    font-family:'Oxygen-Regular';
+    background-color: rgb(255, 255, 255);
+    border: 1px dashed;
+    font-family: 'Oxygen-Regular';
     line-height: normal;
     height: auto;
     overflow: auto;
@@ -36,7 +42,8 @@ main>div {
     margin: 0.5rem;
     height: auto;
     float: left;
-    width: 60%;
+    width: auto;
+    min-width: 40%;
 }
 
 main>aside {
@@ -47,7 +54,7 @@ main>aside {
     margin: 0.5rem;
     height: auto;
     float: left;
-    width: 36%;
+    width: auto;
     min-width: 30%;
 
 }
@@ -59,3 +66,35 @@ main>aside {
     margin: 0.5rem ;
 }
 
+.header-menubar {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 2.5rem;
+
+}
+
+.header-menubar ul {
+ list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-size: larger ;
+    font-weight: 700;
+    text-align: center;
+    text-indent: 0rem;
+    width: auto;
+    margin: 2rem;
+    
+}
+
+.header-logo {
+
+    width: auto;
+    display: inline-block;
+    margin: 1.3rem;
+
+}
