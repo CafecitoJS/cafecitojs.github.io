@@ -16,7 +16,7 @@ body, header, main, footer {
 
 
 header {
-    box-shadow: 0 0 0.5rem;
+    box-shadow: 0 0 1.0rem;
     height: auto;
     min-height: 3rem;
     
@@ -110,5 +110,5 @@ main>aside {
 
 
 .header-menubar a:hover {
-    color: rgb(172, 90, 18);
+    color: #E1D3C6;
 }
