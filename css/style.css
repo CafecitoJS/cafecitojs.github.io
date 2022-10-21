@@ -14,15 +14,20 @@ body, header, main, footer {
 }
 
 body {
-    background-color: darkslategrey;
+    background-color: rgb(245, 240, 240);
+    background-image:;
     font-family:'Oxygen-Regular';
     line-height: normal;
-    
+    height: auto;
+    overflow: auto;
 }
 
 
 main {
-    min-height: 180px;
+    min-height: 280px;
+    height: auto;
+    border: 4px red dotted;
+    overflow: auto;
 }
 
 main>div {
@@ -31,17 +36,19 @@ main>div {
     margin: 0.5rem;
     height: auto;
     float: left;
-    width: 63%;
+    width: 60%;
 }
 
 main>aside {
     border: 4px blue double;
+    background-color: rgb(101, 101, 237);
+    
     min-height: 180px;
     margin: 0.5rem;
     height: auto;
-    float: right;
-    width: 33%;
-    min-width: 25%;
+    float: left;
+    width: 36%;
+    min-width: 30%;
 
 }
 
