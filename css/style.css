@@ -7,7 +7,7 @@ html {
     height: 100%;
 }
 body, header, main, footer {
-    border: 3px darkred solid;
+    /* border: 3px darkred solid; */
     background-color: rgb(255, 255, 255);
     min-height: 150px;
     min-width: 250px;
@@ -21,7 +21,7 @@ header {
 
 body {
     background-color: rgb(255, 255, 255);
-    border: 1px dashed;
+    /* border: 1px dashed; */
     font-family: 'Oxygen-Regular';
     line-height: normal;
     height: auto;
@@ -32,12 +32,12 @@ body {
 main {
     min-height: 280px;
     height: auto;
-    border: 4px red dotted;
+    /* border: 4px red dotted; */
     overflow: auto;
 }
 
 main>div {
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
     min-height: 180px;
     margin: 0.5rem;
     height: auto;
@@ -47,7 +47,7 @@ main>div {
 }
 
 main>aside {
-    border: 4px blue double;
+    /* border: 4px blue double; */
     background-color: rgb(101, 101, 237);
     
     min-height: 180px;
@@ -60,7 +60,7 @@ main>aside {
 }
 
 .secciones {
-    border: 3px darkgoldenrod double;
+    /* border: 3px darkgoldencrod double; */
     min-height: 150px;
     min-width: 250px;
     margin: 0.5rem ;
@@ -97,4 +97,14 @@ main>aside {
     display: inline-block;
     margin: 1.3rem;
 
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-menubar a:hover {
+    color: rgb(172, 90, 18);
 }
