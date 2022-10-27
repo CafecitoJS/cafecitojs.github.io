@@ -2,10 +2,13 @@
     /*padding: 0%;*/
     box-sizing: border-box;
 }
+
 html {
     font-size: 1rem;
     height: 100%;
 }
+
+
 body, header, main, footer {
     /* border: 3px darkred solid; */
     background-color: rgb(255, 255, 255);
@@ -14,37 +17,162 @@ body, header, main, footer {
     margin: 0.5rem ;
 }
 
-
 header {
+    border: 1px rgb(43, 13, 13) solid; 
     box-shadow: 0 0 1.0rem;
     height: auto;
-    min-height: 3rem;
+    /* min-height: 1rem; */
     width: auto;
+    min-height: 150px;
+    text-align: center;
+    /* border: 4px red dotted; */
+    overflow: auto;
 }
 
-header div.contenedor {
-    place-content: flex-start;
+
+body {
+    /* background-color: lightgray; */
+    background-color: rgb(255, 255, 255);
+    /* border: 1px dashed; */
+    font-family: 'Oxygen-Italic';
+    line-height: normal;
+    height: auto;
+    overflow: auto;
+
 }
 
-header .header-menubar nav {
-    width: 70%;
-    display: flex;
-    place-content: space-between;
+main {
+    min-height: 280px;
+    height: auto;
+    /* border: 4px red dotted; */
+    overflow: auto;
+    width: 96%;
+    padding: 2%;
+    background-image: url("/img/cafecito.jpg"); 
+    background-size:cover;
+  }
+
+main>div {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: auto;
+    min-width: 65%;
+  }
+
+main>aside {
+    /* border: 4px blue double; */
+    background-color: #E1D3C6;
+    opacity: 60%;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: auto;
+    min-width: 30%;
+
+  }
+
+.secciones {
+    /* border: 3px darkgoldencrod double; */
+    min-height: 150px;
+    min-width: 250px;
+    margin: 0.5rem ;
+  }
+
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: auto;
+  }
 
 
-}
-
-#menu, #menu-check {
+/* Add a black background color to the top navigation */
+.header-menubar {
+    background-color: #ddd;
+    overflow: hidden;
+    left: auto;
+    position: relative;
+    top: 0rem;
+    width: auto;
+    display: inline-block;
+    margin: 0.1rem 0 0.5rem 10rem;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .header-menubar a {
+    float: left;
+    display: flex; /*: block;*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .header-menubar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .header-menubar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .header-menubar .icon {
     display: none;
-}
+  }
 
+ .header-menubar ul {
+    list-style: none;
+    line-height: normal;
+
+  }
+
+  .header-menubar li {
+    /* display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px; */
+    float: left;
+    font-weight: 200;
+    text-align: justify;
+    text-justify: auto;
+    /* list-style: none; */
+  }
+
+  /* .header-menubar li a {
+    font-size: 1.2rem;
+
+    background: transparent;
+  } */
+
+  #menu, #menu-check {
+    display: none;
+  }
+
+
+
+
+
+  /* RESPONSIVE */
+
+  
 @media screen and (max-width: 900px) {
-    .header-menubar,  header div.contenedor, header div.contenedor ul, header div.contenedor il {
+    header div.contenedor, header div.contenedor ul, header div.contenedor li {
         display: inline;
     }
     header .header-menubar {
         width: 100%;
-        display: inline;
+        /* display: inline; */
+        background-color: #E1D3C6;
+        display: inline-block;
     }
 }
 
@@ -65,7 +193,7 @@ header .header-menubar nav {
 
     #menu {
         display: block;
-        color: #04AA6D;
+        color: black;
         background-color: #ddd;
         font-size: 1.3em;
         font-weight: bol;
@@ -76,8 +204,8 @@ header .header-menubar nav {
         top: 2.6em;
     }
     #menu:hover {
-        color: #04AA6D;
-        background: #333;
+        color:  #E1D3C6;
+        background: #ddd;
 
     }
 
@@ -123,9 +251,6 @@ header .header-menubar nav {
         background: none; */
     } 
 
-
-
-
     .header-menubar,  header div.contenedor, header div.contenedor ul, header div.contenedor il {
         display: flex;
         place-content: space-between;
@@ -137,162 +262,3 @@ header .header-menubar nav {
     }
 }
 
-
-body {
-    background-color: rgb(255, 255, 255);
-    /* border: 1px dashed; */
-    font-family: 'Oxygen-Regular';
-    line-height: normal;
-    height: auto;
-    overflow: auto;
-}
-
-
-main {
-    min-height: 280px;
-    height: auto;
-    /* border: 4px red dotted; */
-    overflow: auto;
-}
-
-main>div {
-    /* border: 2px blue solid; */
-    min-height: 180px;
-    margin: 0.5rem;
-    height: auto;
-    float: left;
-    width: auto;
-    min-width: 40%;
-}
-
-main>aside {
-    /* border: 4px blue double; */
-    background-color: #E1D3C6;
-    
-    min-height: 180px;
-    margin: 0.5rem;
-    height: auto;
-    float: left;
-    width: auto;
-    min-width: 30%;
-
-}
-
-.secciones {
-    /* border: 3px darkgoldencrod double; */
-    min-height: 150px;
-    min-width: 250px;
-    margin: 0.5rem ;
-}
-
-.header-logo {
-
-    width: auto;
-    display: inline-block;
-    margin: 1.3rem;
-
-}
-
-
-/* Add a black background color to the top navigation */
-.header-menubar {
-    background-color: #333;
-    overflow: hidden;
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
-    /* display: inline-block; */
-    margin: 0.5rem 0 0.5rem 2.5rem;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .header-menubar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .header-menubar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .header-menubar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .header-menubar .icon {
-    display: none;
-  }
-
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-/* .header-menubar {
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 2.5rem;
-
-}
-*/
-.header-menubar ul {
- list-style: none;
-}
-/*
-.header-menubar li {
-    float: left;
-    font-size: larger ;
-    font-weight: 700;
-    text-align: center;
-    text-indent: 0rem;
-    width: auto;
-    margin: 2rem;
-    
-}
-
- */
-/* .header-menubar a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.header-menubar a:hover {
-    color: #E1D3C6;
-}
-
-
-.header-menubar a.active {
-    /* background-color: #04AA6D; */
-    /* color: white; */
-  /* } */ 
