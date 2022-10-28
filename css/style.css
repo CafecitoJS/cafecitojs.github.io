@@ -1,7 +1,7 @@
-*{
+/* *{
     /*padding: 0%;*/
     /* box-sizing: border-box; */
-}
+/*} */
 
 html {
     font-size: 1rem;
@@ -51,6 +51,7 @@ main {
     width: 96%;
     padding: 2%;
     background-image: url("/img/cafecito.jpg"); 
+    background-color: rgb(240, 240, 240);
     background-size:cover;
   }
 
@@ -89,10 +90,11 @@ main>aside {
     display: inline-block;
     margin: auto;
     left: 10%;
+    background-color: rgb(240, 240, 240);
+    /* top: 2rem; */
+    margin: 1rem 0 0.5rem 1rem;
   }
 
-
-/* Add a black background color to the top navigation */
 .header-menubar {
     background-color:#E1D3C6;
     /* background-color: #ddd; */
@@ -100,10 +102,23 @@ main>aside {
     overflow: hidden;
     left: auto;
     /* position: */
-    top: 0rem;
+    /* top: 0rem; */
     width: auto;
-    display: inline-block;
-    margin: 0.1rem 0 0.5rem 10rem;
+    /* display: inline-block; */
+    margin: 0.1rem 20 10.5rem 20rem;
+
+    /* background-color: rgb(240, 240, 240); */
+    
+    /* background-color: #E1D3C6; */
+    opacity: 60%;
+    min-height: 1px;
+    margin: 0.5rem;
+    /* height: auto; */
+    height: 50px;
+    float: right;
+    /* width: auto; */
+    min-width: 30%;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -116,6 +131,7 @@ main>aside {
     /* border: 100px; black; */
     text-decoration: none;
     font-size: 20px;
+    
   }
   
   /* Change the color of links on hover */
@@ -136,9 +152,10 @@ main>aside {
   }
 
  .header-menubar ul {
+    padding: 0px 46px 10px 26px;
     list-style: none;
     line-height: normal;
-    border: 0px black;
+    border: 3px black;
 
   }
 
@@ -146,7 +163,7 @@ main>aside {
     display: inline-block;
     /* height: 15px; */
     padding:0px 0px 0px 5px; 
-    margin-left: 5px;
+    /* margin-left: 15px; */
     /* border: 10px black; */
     /* float: left; */
     font-weight: 200;
@@ -182,6 +199,29 @@ main>aside {
         background-color: #E1D3C6;
         display: inline-block;
         padding: 0px 0px 0px 0px;
+
+        border: 1px rgb(43, 13, 13) solid; 
+        box-shadow: 0 0 1.0rem;
+        height: auto;
+        /* min-height: 1rem; */
+        width: auto;
+        min-height: 150px;
+        text-align: center;
+        /* border: 4px red dotted; */
+        overflow: auto;
+        
+        /* opacity: 80%; */
+
+
+
+
+
+
+
+
+
+
+
     }
     .header-menubar {
 /* position: ; */
@@ -199,6 +239,11 @@ main>aside {
 
 
 @media screen and (max-width: 700px) {
+
+    header {
+        width: 95%;
+
+    }
     header h1 {
         margin:0;
     }
@@ -224,8 +269,9 @@ main>aside {
         position: absolute;
         right: 1.5em;
         top: 2.6em;
+        /* display: none; */
     }
-    #menu:hover {
+    #menu-check:hover {
         /* color:  #E1D3C6; */
         background: #E1D3C6;
 
@@ -243,8 +289,8 @@ main>aside {
         display:block;
     }
 
-    header div.contenedor nav {
-        position: absolute;
+    .header-menubar {
+        /* position: absolute; */
         top: 0;
         right: 0;
         height: 100%;
@@ -254,12 +300,16 @@ main>aside {
         opacity: 0.8;
         color:#04AA6D;
         border-radius: 0;
-        position: absolute;
+        position:absolute;
         right: 0.5em;
         top: 0.5em;
         z-index: 9999;
-    }
+        display: none;
+        /* width: auto; */
+        /* width: 90%; */
 
+    }
+/* 
     header div.contenedor ul a {
         color: #04AA6D;
         background: none;
@@ -267,20 +317,10 @@ main>aside {
 
     header div.contenedor nav ul, header div.contenedor nav ul li {
         display: block;
-        text-align: right;
+        text-align: right; */
 
         /* /* color: #04AA6D;
         background: none; */
-    } 
-
-    .header-menubar,  header div.contenedor, header div.contenedor ul, header div.contenedor il {
-        display: flex;
-        place-content: space-between;
-
-    }
-    header .header-menubar {
-        width: 100%;
-        display: inline;
-    }
+    /* }  */
 }
 
