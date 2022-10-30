@@ -46,7 +46,81 @@
      
       </div> 
       <aside class="contenido-sec">
-        <article>notas...</article>
+        <article id="art" onclick="notas(this.document.getElementById(id))">Notas...(hacer click para cargar una nueva nota)<span id="art"></span></article>
+        <script>
+              var url = 'https://newsapi.org/v2/everything?' +
+              'q=Cafe&' +
+              'sortBy=popularity&' +
+              'apiKey=409a0f042e844e39a5742d62d19718d4';
+              var i = 0;
+              var req = new Request(url);
+
+              // fetch(url).then((response)=>{
+              //       return response.json()
+              //               }).then((datos)=>{
+              //                       console.log(datos)
+              //               })
+                  fetch(url)
+                    .then(a => a.json())
+                    .then(response => {
+                    // timer = function() {
+                      // for(var i=0;i<response.articles.length;i++){
+                        // sleep(5000);
+                        document.getElementById("art").innerHTML += response.articles.length +"|"+ 0 + " " +
+                        response.articles[0].content;
+                        // setTimeout(timer,2000);
+                        // console.log(response.articles[i].content);
+                        //  sleep(2000);
+                      } );
+
+                  //   }
+                  // timer();
+                  function notas() {
+                    i=i+1;
+                    this.innerHTML = "|"+ i + " " +
+                        response.articles[i].content;
+                  }
+                  // );
+                  function sleep(milliseconds) {
+                    const date = Date.now();
+                    let currentDate = null;
+                    do {
+                      currentDate = Date.now();
+                    } while (currentDate - date < milliseconds);
+                  }
+                  // function sleep(ms) {
+                  //               return new Promise(resolve => setTimeout(resolve, ms));
+                  //           }  
+                    
+                    // response)=>{
+                    // return response.json()
+                    //         }).then((datos)=>{
+                    //                 console.log(datos)
+                    //         })
+
+              // datos.articles.forEach(article => {
+
+                // let li = document.createElement('li');
+                // let a = document.createElement('a');
+                // a.textContent = article.content;
+                // a.textContent = article.description;
+              //   document.getElementById('art').innerHTML = article.content;
+              // });      
+              
+              
+              // for(var i = 0;i < art.length; i++)
+                      // {
+                          // div.innerHTML = div.innerHTML + "<p class='inner' id="+ i + ">" + art[i].articles +"</p>" + "<br>";
+                          // console.log(art);
+                      // }
+                      // document.getElementById("art").innerHTML = art;
+                      // console.log(response.json());
+                      // console.log(art.articles);
+                    // })
+        </script>
+
+
+       
       </aside>
     </main>
 
