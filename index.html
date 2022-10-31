@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CafecitoJS</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="js/funciones.js">
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="/js/funciones.js"></script>
 </head>
 
 <body>
@@ -46,50 +48,91 @@
      
       </div> 
       <aside class="contenido-sec">
-        <article id="art" onclick="notas(this.document.getElementById(id))">Notas...(hacer click para cargar una nueva nota)<span id="art"></span></article>
+        <article id="art">Notas...<span id="art"></span></article>
         <script>
               var url = 'https://newsapi.org/v2/everything?' +
-              'q=Cafe&' +
+              'q=Coffe&' +
               'sortBy=popularity&' +
               'apiKey=409a0f042e844e39a5742d62d19718d4';
+              // url = "https://newsapi.in/newsapi/news.php?key=nNYpX9SAfabYFMx1j6SvrZ3vmC5DIh&category='coffee'"
+              
               var i = 0;
               var req = new Request(url);
+              const element = document.getElementById("art");
 
-              // fetch(url).then((response)=>{
-              //       return response.json()
-              //               }).then((datos)=>{
-              //                       console.log(datos)
+              fetch(req)
+               .then((a)=>{return a.json()})
+               .then((response)=>
+                  setInterval(function() {
+
+                    if (i < response.articles.length) {
+                      i++;
+                    } else { 
+                      i=0;
+                    }
+                    
+                    element.innerHTML = response.articles[i].content;
+                  
+                  }
+                  , 2000)
+
+               );
+              // doRefresh(i,response.articles.length);
+
+              // fetch(url)
+              // .then((response)=>{return response.json()})
+              // .then((datos)=>{doRefresh(0);
+              //                 console.log(datos)
               //               })
-                  fetch(url)
-                    .then(a => a.json())
-                    .then(response => {
-                    // timer = function() {
-                      // for(var i=0;i<response.articles.length;i++){
-                        // sleep(5000);
-                        document.getElementById("art").innerHTML += response.articles.length +"|"+ 0 + " " +
-                        response.articles[0].content;
+              //     // fetch(url)
+                  //   .then(a => a.json())
+                  //   .then(response => {
+                  //   // timer = function() {
+
+                    
+                //  for(var i=0;i<response.articles.length;i++){
+                    // doRefresh(i);
+
+                //  sleep(5000);
+                //     document.getElementById("art").innerHTML += response.articles.length +"|"+ 0 + " " +
+                //     response.articles[0].content;
                         // setTimeout(timer,2000);
                         // console.log(response.articles[i].content);
                         //  sleep(2000);
-                      } );
+                      // };
 
                   //   }
                   // timer();
-                  function notas() {
-                    i=i+1;
-                    this.innerHTML = "|"+ i + " " +
-                        response.articles[i].content;
-                  }
-                  // );
-                  function sleep(milliseconds) {
-                    const date = Date.now();
-                    let currentDate = null;
-                    do {
-                      currentDate = Date.now();
-                    } while (currentDate - date < milliseconds);
-                  }
-                  // function sleep(ms) {
-                  //               return new Promise(resolve => setTimeout(resolve, ms));
+
+
+                  // <script type="text/javascript">
+                //   function doRefresh(i,lng) {
+                //       i += 1;
+                //       if (i == lng){ i = 0;}
+                //       $("#show").load("#show");
+                //       document.getElementById("art").innerHTML = response.articles[idx].content;
+                //     }
+                // $(function () {
+                //     setInterval(doRefresh(idx), 5000);
+                // });
+
+
+
+                  // function notas() {
+                  //   i=i+1;
+                  //   this.innerHTML = "|"+ i + " " +
+                  //       response.articles[i].content;
+                  // }
+                  // // );
+                  // function sleep(milliseconds) {
+                  //   const date = Date.now();
+                  //   let currentDate = null;
+                  //   do {
+                  //     currentDate = Date.now();
+                  //   } while (currentDate - date < milliseconds);
+                  // }
+                  // // function sleep(ms) {
+                  // //               return new Promise(resolve => setTimeout(resolve, ms));
                   //           }  
                     
                     // response)=>{
