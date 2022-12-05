@@ -1,0 +1,359 @@
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body, header, main, footer {
+    /* border: 3px darkred solid; */
+    background-color: rgb(255, 255, 255);
+    min-height: 150px;
+    min-width: 250px;
+    margin: 0.5rem ;
+}
+
+header {
+    border: 1px rgb(43, 13, 13) solid; 
+    box-shadow: 0 0 1.0rem;
+    height: 180px;
+    /* top: 20px; */
+    /* min-height: 1rem; */
+    width: auto;
+    min-height: 150px;
+    text-align: center;
+    /* border: 4px red dotted; */
+    overflow: auto;
+    
+    /* opacity: 80%; */
+}
+
+
+body {
+    /* background-color: lightgray; */
+    background-color: rgb(255, 255, 255);
+    /* border: 1px dashed; */
+    font-family: 'Oxygen-Italic';
+    line-height: normal;
+    height: auto;
+    overflow: auto;
+
+}
+
+main {
+    min-height: 280px;
+    height: auto;
+    /* border: 4px red dotted; */
+    overflow: auto;
+    width: 96%;
+    padding: 2%;
+    background-image: url("/img/cafecito.jpg"); 
+    background-color: rgb(240, 240, 240);
+    background-size:cover;
+  }
+
+  .header-logo {
+    width: auto;
+    display:inline-flex;
+    position: absolute;
+    size-adjust:inherit;
+    /* : inline-block; */
+    margin: 0px;
+    left: 10%;
+    top: 1%;
+    background-color: rgb(240, 240, 240);
+    /* top: 2rem; */
+    margin: 1% 0 0.5rem 1rem;
+  }
+
+.header-menubar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky; 
+    top: 0;
+    background-color:#E1D3C6;
+    /* background-color: #ddd; */
+    /* top: 120px; */
+    overflow: hidden;
+    /* position: relative; */
+    /* top: 0rem; */
+    /* width: auto; */
+    /* display: inline-block; */
+    /* margin: 1rem 20 10.5rem 20rem; */
+
+    /* background-color: rgb(240, 240, 240); */
+    /* position: fixed; */
+    float: none;
+    left: 30%;
+    top: 30%;
+    width: 55%;
+    /* padding:0px; */
+    /* background-color: #E1D3C6; */
+    opacity: 60%;
+    min-height: 10px;
+    margin: 20px 4px 10px 5px;
+    /* height: auto; */
+    height: 80px;
+    border: 0px;
+    /* float: right; */
+    /* width: auto; */
+    min-width: 30%;
+    padding: auto;
+    /* top: 155px; */
+    white-space: 20px;
+    display:block;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .header-menubar a {
+    float:none; /*left; /*: left;*/
+    display: block;
+    border-spacing: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    top: 10px;
+    /* padding: 1% 2% 10% 25%; */
+    /* border: 100px; black; */
+    text-decoration: none;
+    /* padding: 10px 46px 10px 26px; */
+    margin: 0% 20% 10% 10%;
+    /* margin: 10px 4px 10px 5px; */
+    font-size: 20px;
+    position: relative;
+    /* margin: 5% 1% 10% 15%; */
+    /* position: absolute; LPMMMM */
+    /* padding: 25% 25% 5% 10%; */
+    /* display: flex; */
+  }
+  
+  /* Change the color of links on hover */
+  .header-menubar a:hover {
+    background-color: rgb(214, 195, 179);
+    color:#433528;
+
+  }
+  
+  /* Add an active class to highlight the current page */
+  /* .header-menubar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+   */
+  /* Hide the link that should open and close the topnav on small screens */
+  
+ .header-menubar ul {
+    padding: 0px 46px 10px 26px;
+    /* top: 0px;
+    left: 0px; */
+    list-style: none;
+    /* list-style-type: none; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* overflow: hidden; */
+    /* text-align: center; */
+    line-height: normal;
+    /* border: 5px black; */
+
+  }
+
+  .header-menubar li {
+    display: inline-block;
+    /* float: left; */
+    /* height: 15px; */
+    padding:0px 0px 0px 5px; 
+    /* margin-left: 15px; */
+    /* border: 10px black; */
+    /* float: left; */
+    /* top:0px; */
+    /* left:0px; */
+    font-weight: 200;
+    text-align: center;
+    text-justify:distribute;
+    background-color:#E1D3C6;
+    list-style:none;
+  }
+
+  .header-menubar li a {
+    font-size: 1.2rem;
+    background: transparent;
+  }
+
+  #menu, #menu-check {
+    display: none;
+  }
+
+  main>div {
+    /* border: 2px blue solid; */
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: auto;
+    min-width: 65%;
+  }
+
+main>aside {
+    /* border: 4px blue double; */
+    background-color: #E1D3C6;
+    opacity: 60%;
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: auto;
+    min-width: 30%;
+
+  }
+
+.secciones {
+    /* border: 3px darkgoldencrod double; */
+    min-height: 150px;
+    min-width: 250px;
+    margin: 0.5rem ;
+  }
+
+
+
+  /* RESPONSIVE */
+
+  
+@media screen and (max-width: 900px) {
+    header div.contenedor, header div.contenedor ul, header div.contenedor li {
+        display: inline;
+    }
+    header, .header-menubar {
+        width: 100%;
+        position: 0px 0px 0px 0px;
+        background-color: #E1D3C6;
+        display: inline-block;
+        padding: 0px 0px 0px 0px;
+
+        border: 1px rgb(43, 13, 13) solid; 
+        box-shadow: 0 0 1.0rem;
+        height: auto;
+        /* min-height: 1rem; */
+        width: auto;
+        min-height: 150px;
+        text-align: center;
+        /* border: 4px red dotted; */
+        overflow: auto;
+        
+        /* opacity: 80%; */
+
+    }
+    /* .header-menubar {
+/* position: ; */
+        /* display:inline-table;
+        position: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px; */
+/*    } */
+
+
+
+
+
+}
+
+.header-menubar .icon {
+    display:none;
+  }
+
+
+@media screen and (max-width: 700px) {
+
+    header {
+        width: 95%;
+
+    }
+    header h1 {
+        margin:0;
+    }
+    header h1 a {
+        padding:0;
+    }
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }  
+
+    #menu-check::checked ~ nav {
+        display: block;
+    }  
+
+    #menu {
+        display: block;
+        color: black;
+        background-color: #ddd;
+        font-size: 1.3em;
+        font-weight: bol;
+        border: 3px solid goldenrod;
+        border-radius: 0%;
+        position: absolute;
+        right: 1.5em;
+        top: 2.6em;
+        /* display: none; */
+    }
+    #menu-check:hover {
+        /* color:  #E1D3C6; */
+        background: #E1D3C6;
+
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir {
+        display:none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar {
+        display:block;
+    }
+
+    .header-menubar {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #ddd;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        opacity: 0.8;
+        color:#04AA6D;
+        border-radius: 0;
+        position:absolute;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 9999;
+        display: none;
+        /* width: auto; */
+        /* width: 90%; */
+
+    }
+
+
+
+    .header-menubar .icon {
+        display: none;
+      }
+
+
+    .articulo {
+        white-space: pre;
+        text-indent: 90%;
+        background: #D3E22A;
+        width: wrap; 
+      }
+    /* 
+    header div.contenedor ul a {
+        color: #04AA6D;
+        background: none;
+    }
+
+    header div.contenedor nav ul, header div.contenedor nav ul li {
+        display: block;
+        text-align: right; */
+
+        /* /* color: #04AA6D;
+        background: none; */
+    /* }  */
+}
+
