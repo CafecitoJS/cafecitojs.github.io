@@ -3128,7 +3128,8 @@ border-radius: 5px;
   background: #000; }
 
 .f_title {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  color: #cccccc; }
 
   .f_title h2 {
     color: #fff;
@@ -3142,7 +3143,8 @@ border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     font-family: "Heebo", sans-serif;
-    margin-bottom: 0px; }
+    margin-bottom: 0px; 
+    color: #cccccc; }
 
 .ab_widget p {
   font-size: 14px;
