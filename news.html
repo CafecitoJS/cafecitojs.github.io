@@ -46,7 +46,7 @@
           <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li> 
           <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li> 
           <!-- <li class="nav-item"><a class="nav-link" href="projects">Work</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="news.html">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Contacto</a></li>
           <!-- <li><a href="index.html">Inicio</a></li> -->
           <!-- <li><a href="menu.html" >Menú</a></li> -->
           <!-- <li><a href="news.html" >Novedades</a></li> -->
@@ -60,35 +60,574 @@
 
   <!--================Header Menu Area =================-->
   <!--================Home Banner Area =================-->
+  <section class="home_banner_area">
+<div class="black_1">
+       <div class="container box_1620">
+         <div class="banner_inner d-flex align-items-center">
+    <div class="banner_content">
+      <div class="media">
+        <div class="d-flex">
+          <img src="img/beans.webp" alt="..." loading="lazy" alt="main_image" >
+          <!-- <img src="img/personal.webp" alt="..." loading="lazy" alt="main_image"width="180" height="180"> -->
+        </div>
+        <div class="media-body">
+          <div class="personal_text">
+            <!-- <h5>Bello día...</h5> -->
+            <div class="Hello"> <h3>Cafecito JS</h3> </div>
+            <h4><b>Contacto</b></h4>
 
-
-
-
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>El Café en el mundo</h2>
-							<div class="page_link">
-								<a href="index.html">Inicio</a>
-								<a href="news.html">Noticias</a>
-
-							</div>
-             
-
-						<!-- </div> -->
-					</div>
-				</div>
-            </div>
-		</section>
-		
-
+            <p>Si queres saber más sobre nuestros, <br>
+               cursos de baristas, de cata,<br> 
+               o sobre nuestros exclusivos  <br>
+               productos, contactanos o acercate <br>
+              </p>
             
-   <!--================Footer Area =================-->
+            <ul class="list basic_info">
+
+
+            </ul>
+
+            <ul class="list personal_social">
+              <li><a href="https://github.com/CafecitoJS/cafecitojs.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/fzatt" target=" _blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/federico-zattera-4725831a/" target=" _blank"><i class="fa fa-linkedin"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </section>
+  <!--================End Home Banner Area =================-->
+  
+  <!--================Welcome Area =================-->
+  <section class="welcome_area p_120">
+    <div class="container">
+      <div class="row welcome_inner">
+        <div class="col-lg-6">
+          <div class="welcome_text">
+            <h4>Contacto</h4>
+
+
+
+     <!--Seccion para formulario contacto-->
+     <section class="contenedor"  id="contacto">
+      <h2 class="subtitulo"><b>Contacto</b></h2>
+      <section class="contact-info">
+           <!-- <div class="col-12 col-md-6 info"> -->
+               <!--<p>Somos un centro de servicios personalizados con un importante staff de profesionales.</p>
+               <p>Si queres saber mas sobre nuestros tratamientos envianos tu consulta.</p>
+               <p>Si queres solicitar un turno elegi el tratamiento y el horario que prefieras y te contactaremos para confirmarte.</p>
+               <p>No dudes en consultar sobre opciones promocionales y recordá que pagando en efectivo tenes importantes descuentos.</p>
+               -->
+               <!-- <div class="contact-info">
+                  <p>Si queres saber más sobre nuestros tratamientos envíanos tu consulta.</p>
+                  <p>Si queres solicitar un turno elegí el tratamiento y el horario que prefieras y te contactaremos para confirmarte.</p>
+                  <p>No dudes en consultar sobre opciones promocionales y recordá que pagando en efectivo tenes importantes descuentos.</p>
+                  <p>Lunes a Sábados de 8 a 19.</p>
+                  <p>Encontranos en Lomas del Mirador </p>
+               </div> -->
+          </div>
+          <!-- <div class="col-12 col-md-6 formulario"> -->
+            <ul class="list basic_info">
+
+               <form class="form" action="https://formspree.io/f/xdojdrwv" method="POST"
+                id="contactForm" name="contactForm" novalidate>
+                   <div class="mb-3">
+                       <label for="name" class="form-label">Nombre*</label>
+                       <input type="text" class="form-control" name="Nombre" id="name" placeholder="Nombre">
+                   </div>
+   
+                   <div class="mb-3">
+                       <label for="email" class="form-label">Correo electronico*</label>
+                       <input type="email" class="form-control" name="Email" id="email" placeholder="nombre@ejemplo.com">
+                   </div>
+   
+                   <div class="form-check mb-3" id="checkbox">
+                       <input onclick="changeForm(this)"  class="form-check-input" 
+                       type="checkbox" name="Sacar Turno" id="check">
+                       <label class="form-check-label" for="check">
+                         Sacar turno
+                       </label>
+                   </div>
+                  
+               
+                   <div class="mb-3">
+                       <label for="mensaje" class="form-label">Mensaje</label>
+                       <textarea class="form-control" name="Mesaje" id="mensaje" rows="3"></textarea>
+                   </div> 
+                   <div class="actions">
+                       <button  class="btn submit-button" type="submit" >Enviar</button>         
+                   </div> 
+               </form>
+          <!-- </div>
+                         <div class="g-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3241786179756!2d-58.48145768428353!3d-34.5453465619199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6bdf0dd9f83%3A0xb1bc82eeda44bcd5!2sGiga%20Corp%20SRL%20Soft%20Facturacion%20Electronica!5e0!3m2!1sen!2sar!4v1670343031856!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+  
+       </div>
+        -->
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+            <div class="row">
+              <div class="col-md-4">
+                <div class="wel_item">
+              <i class="fa fa-files-o" aria-hidden="true"></i>
+                  <h4>01</h4>
+                  <p> Master Plan <br> Done
+              </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="wel_item">
+                  <i class="fa fa-coffee" aria-hidden="true"></i>
+                  <h4>140730</h4>
+                  <p>Tazas de Café consumidas</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="wel_item">
+                  <i class="fa fa-rocket" aria-hidden="true"></i>
+                  <h4>1234</h4>
+                  <p>Sucursales proyectadas</p>
+            </div>
+            
+              </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tools_expert">
+            <div class="skill_main">
+                           
+          <div class="skill_item">
+            <h4> Blends catados   <i class="fa fa-coffee" aria-hidden="true"></i> <span class="counter"> 80</span>%</h4>
+            <div class="progress_br">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill_item">
+            <h4> Kilometros recorridos  <i class="fa fa-road" ></i> <span class="counter"> 85</span>%</h4>
+            <div class="progress_br">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill_item">
+            <h4> Visitas a plantaciones  <i class="fa fa-leaf" ></i><span class="counter"> 80</span>% </h4>
+            <div class="progress_br">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill_item">
+            <h4> Baristas capacitados <i class="fa fa-users" > </i> <span class="counter">70</span>%</h4>
+            <div class="progress_br">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="skill_item">
+            <h4>Blends</h4> <i class="fa fa-heart-o" ></i> <span class="counter">80</span>%</h4>
+            <div class="progress_br">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+          </div>
+    </div>
+    
+
+
+      </div>
+    </div>
+  </section> -->
+  <!--================End Welcome Area =================-->
+  <!--================My Tabs Area =================-->
+
+<!--   
+
+  <section class="mytabs_area p_120">
+    <div class="container">
+      <div class="tabs_inner">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <ul class="list">
+          <li>
+            
+            <div class="media">
+              <div class="d-flex">
+                <p>March 2020 To Present</p>
+              </div>
+              <div class="media-body">
+                <h4>Nlogn.in</h4>
+                <p>Junior Web Developer <br />WordPress , Post Writing <br> Bangalore , India</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            
+            <div class="media">
+              <div class="d-flex">
+                <p>May 2020 To Present</p>
+              </div>
+              <div class="media-body">
+                <h4>All Design Events.co</h4>
+                <p>Core Web Developer <br />MERN Stack <br> Bangalore , India</p>
+                
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <ul class="list">
+          <li>
+            <span></span>
+            <div class="media">
+              <div class="d-flex">
+                <p>August 2019 To present</p>
+              </div>
+              <div class="media-body">
+                <h4>B.Tech | Graduation </h4>
+                <p>Computer Science Engineer <br />Birla Institute Of Applied Sciences , Bhimtal</p>
+                
+              </div>
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="media">
+              <div class="d-flex">
+                <p>March 2018 To March 2019</p>
+              </div>
+              <div class="media-body">
+                <h4>10+2 </h4>
+                <p> Science Stream <br />PCM,  CBSE </p>
+              </div>
+            </div>
+          </li>
+          <li>
+          <span></span>
+            <div class="media">
+              <div class="d-flex">
+                <p>March 2016 To March 2017</p>
+              </div>
+              <div class="media-body">
+                <h4>High School</h4>
+                <p>  CBSE </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!--================End My Tabs Area =================-->
+
+  <!--================Feature Area =================-->
+  <!-- <section class="feature_area p_120">
+    <div class="container">
+      <div class="main_title">
+        <p> <h2> This is How I Create <br> </h2>  </p><h1> <i> DIFFERENCE </i> </h1>
+         <p> <i> I believe in Experiment and learn  </i> |  <b> Rather then  learn and learn. </b></p>
+  </div>
+      <div class="feature_inner row">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+          <img src="./img/skills/image1.png" height = "145px" width="55%" loading="lazy" >
+            <h4> <br>Competitive Programming</h4>
+            <p> I started coding when i was 18' and after beginning i went into sporting in programming . Competitive Programming tough me the way to think and approach in any field of life. I have been in C++ as by basic language and have dream to achieve and win in this sport. </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image2.png" height = "145px" width="55%" loading="lazy">
+            <h4><br> Web Developing</h4>
+            <p>I love Developing and designing, creating a fully functional website with love and javascript, is what excites me , i can design fully functional website's. Web Development is like a passion for me and with this i have learnt a lot about several things in internet and products.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image3.png" height = "145px" width="55%" loading="lazy">
+            <h4><br> Tech Blogging</h4>
+            <p>I train my brain to learn and react , this is what lead you here . Also i have different manner to learn and imply, this is what i love to share and i found written text's as a great mean to share my ideas and skills, also tech blogging leads me to learn and take ny ideas/beautiful codes to the world.</p>
+          </div>
+        </div>
+  </div>
+      <div class="feature_inner row">
+          <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image4.png" height = "145px" width="55%" loading="lazy">
+            <h4><br> Chess </h4>
+            <p>Chess is a ancient and strategical game, i have been playing chess from last 10 years and it is really what improves my skills to work and take proper Decision in stressed and critical situation. Chess is like a mind sport for me.</p>
+          </div>
+        </div>
+  
+      
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+          <img src="./img/skills/image13.png" height = "130px" width="50%" loading="lazy">
+            <h4> <br>Creating Videos</h4>
+            <p>Sharing the way i grind and help other to learn and develop new skills and manner is what i wanted to do and by creating interesting videos i find it easy manner to help.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image6.png" height = "145px" width="50%" loading="lazy">
+            <h4><br>Astrology</h4>
+            <p>Astrology deals with the ancient hinduism Technique . Astrology was known for the betterment of mankind and that leads my interest in astrology, I am greatly involved in astrology and aim to help mankind in their daily life style and in thir manner of living.</p>
+          </div>
+    </div>
+  </div>
+      <div class="feature_inner row">
+          <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image14.png" height = "185px" width="75%" loading="lazy">
+            <h4><br> Rockets</h4>
+            <p>Traveling space is a dream for me , partially rockets and spaceships traveling through the space excites me to work and develop skills.</p>
+          </div>
+        </div>
+  
+      
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+          <img src="./img/skills/image15.png" height = "145px" width="55%" loading="lazy">
+            <h4> <br>Technology</h4>
+            <p>Trying and working on latest Tech stuff is my passion and i love feel it good to try new tech stuff on the top.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image16.png" height = "145px" width="50%" loading="lazy">
+            <h4><br>Greenery</h4>
+            <p>Good weather and fresh air is most important to live fresh and think fresh, this is why i love to plant </p>
+          </div>
+    </div>
+  </div>
+      <div class="feature_inner row">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+          <img src="./img/skills/image7.png" height = "150px" width="50%" loading="lazy">
+            <h4> <br> Astro-Physics </h4>
+            <p>Staring into a dark place and discovering a piece of light in that dark space. Astro-Physic is what i love the most, and i love to learn and make my own predictions regarding our solar system. Imagining things which human cant see makes me feel alive and i am in love with black holes andd warm holes.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image8.png" height = "145px" width="55%" loading="lazy">
+            <h4><br> Gaming</h4>
+            <p>GAming in arcade environment boost our skills to live and improve out though process, i love to play games in weekend and every time i play i always try to learn from the situations.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature_item">
+            <img src="./img/skills/image9.png" height = "145px" width="55%" loading="lazy">
+            <h4><br> Fitness And Meditation</h4>
+            <p>A healthy brain reside in a healthy body, i love to practice healthy habits and Meditation is one of them and also eating healthy food to stabilize the body.</p>
+          </div>
+        </div>
+      </div>			
+    </div>
+  </section> --> 
+  <!--================End Feature Area =================-->
+  
+  <!--================Home Gallery Area =================-->
+  <!-- <section class="home_gallery_area p_120">
+    <div class="container">
+      <div class="main_title">
+        <h2>What I Am Working On  </h2>
+        <p>Who are in extreme Love with <a href="https://github.com/8bithemant" target="_blank"  >JavaScript</a>.</p>
+      </div>
+      <div class="isotope_fillter">
+        <ul class="gallery_filter list"> -->
+      <!-- <li class="active" data-filter="*"><a href="#">All</a></li> -->
+      <!-- <li data-filter=""><a href="">React JS</a></li>
+      <li data-filter=""><a href="">Express JS</a></li>
+      <li data-filter=""><a href="">Javascript</a></li>
+    </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="gallery_f_inner row imageGallery1">
+        <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+          <div class="h_gallery_item">
+            <div class="g_img_item">
+              <img class="img-fluid" src="img/gallery/twitter.png"  height = "100px" width="100%" alt="" loading="lazy">
+          <a class="light" href="img/gallery/twitter.png"><img src="img/gallery/icon.png" alt="" loading="lazy"></a>
+        </div>
+        <br>
+            <div class="g_item_text">
+          <a class="white_bg_btn"  href="https://github.com/8bithemant"  target="_blank" style="background-color:grey;" >Check-Out </a>
+              <h4>Twitter Clone  </h4>
+              <p>Twitter is most used and complicated platform, so decided to clone it and know why it is most complicated and most used. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
+          <div class="h_gallery_item">
+            <div class="g_img_item">
+              <img class="img-fluid" src="img/gallery/mern.png" alt="" loading="lazy">
+              <a class="light" href="img/gallery/mern.png"><img src="img/gallery/icon.png" alt="" loading="lazy"></a>
+        </div>
+        <br>
+            <div class="g_item_text">
+          <a class="white_bg_btn" href="https://github.com/8bithemant" target="_blank" style= "background-color:grey;">Check-Out </a>
+              <h4>MERN Stack</h4>
+              <p>I am focused on developing skills and grab good knowledge and experience in mern stack ,where i am learning it by designing the projects as well as by 
+            lectures from Frontend Master
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
+          <div class="h_gallery_item">
+            <div class="g_img_item">
+              <img class="img-fluid" src="img/gallery/js.jpg" alt="">
+              <a class="light" href="img/gallery/js.jpg"><img src="img/gallery/icon.png" alt="" loading="lazy"></a>
+        </div>
+        <br>
+            <div class="g_item_text">
+          <a class="white_bg_btn" href="https://github.com/8bithemant" target="_blank" style= "background-color:grey;">Check-Out </a>
+              <h4>JavaScript</h4>
+              <p>Web Development and application development has a new face now due to javascript based frameworks.</p>
+            </div>
+          </div>
+        </div>  -->
+      <!--	<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
+          <div class="h_gallery_item">
+            <div class="g_img_item">
+              <img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
+              <a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
+            </div>
+            <div class="g_item_text">
+              <h4>3D Disposable Bottle</h4>
+              <p>Client Project</p>
+            </div>
+          </div>
+        </div>-->
+      <!--	<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
+          <div class="h_gallery_item">
+            <div class="g_img_item">
+              <img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
+              <a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+            </div>
+            <div class="g_item_text">
+              <h4>3D Logo Design</h4>
+              <p>Client Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more_btn">
+        <a class="main_btn" href="#">Load More Items</a>
+      </div>
+    </div> 
+  </section>
+  -================End Home Gallery Area =================-->
+  
+  <!--================Testimonials Area =================-->
+<!-- <section class="testimonials_area p_120">
+    <div class="container">
+      
+  <div class="main_title">
+         <h1> nuestros destacados...  </h1>
+        
+  </div>
+       <div class="testi_inner">
+    <div class="testi_slider owl-carousel">
+      <div class="item">
+        <div class="testi_item">
+          <h3>Mocha</h3>  <h4>Leche - Café - Chocolate</h4>  <p><br>Un café moca es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, en forma de jarabe de chocolate.</p>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star-half-o"></i></a>
+        </div>
+      </div>
+
+
+
+      <div class="item">
+        <div class="testi_item">
+          <h3>Cappuccino</h3>  <h4>Leche - Café - Chocolate - Canela</h4>  <p><br>El cappuccino se prepara con café expreso y leche montada con vapor para darle cremosidad. Nuestro cappuccino se compone de 125 ml de leche y 25 ml de café expreso, con agregado de cacao en polvo y canela según el gusto del consumidor.</p>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star-half-o"></i></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testi_item">
+          <h3>Latte</h3>  <h4>Leche - Café </h4>  <p><br>El Café Latte es un tipo de café preparado con un café espresso como base y con leche calentada al vapor.</p>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a>
+          <a href="#"><i class="fa fa-star"></i></a> 
+          <a href="#"><i class="fa fa-star-half-o"></i></a>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+      </div> 
+    </div>
+  </section>   -->
+  <!--================End Testimonials Area =================-->
+  
+  <!--================Footer Area =================-->
   <footer class="footer_area p_120">
     <div class="container">
       <div class="row footer_inner">
@@ -97,62 +636,26 @@
             <div class="f_title">
               <h2>CafecitoJS...</h2>
             </div>
-
-  
-            <article class="articulo" id="art">Notas...<span id="art"></span></article>
-            <script>
-                  var url = 'https://newsapi.org/v2/everything?' +
-                  'q=Coffee&' +
-                  'sortBy=popularity&' +
-                  'apiKey=409a0f042e844e39a5742d62d19718d4';
-                  // url = "https://newsapi.in/newsapi/news.php?key=nNYpX9SAfabYFMx1j6SvrZ3vmC5DIh&category='coffee'"
-                  
-                  var i = 0;
-                  var req = new Request(url);
-                  try {
-                    const element = document.getElementById("art");
-    
-                    fetch(req)
-                    .then((a)=>{return a.json()})
-                    .then((response)=>
-                        setInterval(function() {
-    
-                    
-                         try {
-                            element.innerHTML = response.articles[i].content ;
-                          }
-                          catch {
-                            document.getElementById("art").innerHTML = 'Esperando...'+ err.message;
-                          };
-                        
-                        }
-                        , 2000)
-    
-                    );
-                      }
-            </script>
-
         <!-- <p> <h4> Hii, I am 18 years old..<br>  </h4> -->
         <h2>         </h2>
-                      <p>
-        <!-- <br>Somos un grupo de profesionales (Baristas, maestros tostadores y los únicos catadores profesionales del país) que trabajamos para garantizar la máxima calidad en todos los momentos del café (crudo, tostado y en la bebida). -->
+                      
+        <br>Somos un grupo de profesionales (Baristas, maestros tostadores y los únicos catadores profesionales del país) que trabajamos para garantizar la máxima calidad en todos los momentos del café (crudo, tostado y en la bebida).
         </p>
         
           </aside>
         </div>
-    <!-- <div class="col-lg-5 col-sm-6">
+    <div class="col-lg-5 col-sm-6">
           <aside class="f_widget news_widget">
             <div class="f_title">
               <h2>Donde estamos</h2>
             </div>
         <h3>Buenos Aires. Argentina</h3>
-        - <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/hemant"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" target="_blank" alt="Buy me a coffee" style="margin-left: 11px;"><span style="margin-left:18px">Buy me a coffee</span></a> -
+        <!-- <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/hemant"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" target="_blank" alt="Buy me a coffee" style="margin-left: 11px;"><span style="margin-left:18px">Buy me a coffee</span></a>
         <div class="asside1"> 
         <p><h4> Source code on my github -><a href="https://github.com/8bithemant/Responsive-Portfolio" target="_blank" style="margin-top: 45px;" >Hemant Joshi </h3></a></p>
-        <h3>Make sure to 🌟</h3> </div> --
+        <h3>Make sure to 🌟</h3> </div> -->
           </aside>
         </div>
-      -->
         <div class="col-lg-2">
           <aside class="f_widget social_widget">
             <div class="f_title">
@@ -216,5 +719,105 @@
 
 
 
+
+
+
+
+
+
+
+
+
+<!-- 
+<body>
+    <header>
+       <div class="header-logo">
+            <img src="img/logo.png" alt="CafecitoJS" width="150" height="150">
+       </div> 
+ 
+       <nav class="navbar navbar-expand-lg navbar-light"> 
+        <ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            /* <input type="checkbox" id="menu-check"> -->
+            <!-- <label id="menu" for="menu-check"> -->
+              <!-- <span id="menu-abrir">&#9776;</span> -->
+              <!-- <span id="menu-cerrar">&#x2715</span> -->
+           <!-- </label> */
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" >Menú</a></li>
+                <li><a href="news.html" >Novedades</a></li>
+                <li><a href="about.html">Somos</a></li>
+              </ul>
+            </div>
+        </ul>
+       </nav>
+    </header>
+
+
+    <main>
+        <div class="contenido-ppal">
+        <section class="secciones">
+            <h3>Java Soul</h3>
+            <article>Alma de cafe <br>Blend de aromas<br><br>Arabigo<br><br>Moka</article>
+            <p>
+
+            ..
+            </p>
+        </section>
+     
+      </div> 
+      <aside class="contenido-sec">
+        <article class="articulo" id="art">Notas...<span id="art"></span></article>
+        <script>
+              var url = 'https://newsapi-.org/v2/everything?' +
+              'q=Coffe&' +
+              'sortBy=popularity&' +
+              'apiKey=409a0f042e844e39a5742d62d19718d4';
+              // url = "https://newsapi.in/newsapi/news.php?key=nNYpX9SAfabYFMx1j6SvrZ3vmC5DIh&category='coffee'"
+              
+              var i = 0;
+              var req = new Request(url);
+              try {
+                const element = document.getElementById("art");
+
+                fetch(req)
+                .then((a)=>{return a.json()})
+                .then((response)=>
+                    setInterval(function() {
+
+                      if (i < response.articles.length) {
+                        i++;
+                      } else { 
+                        i=0;
+                      }
+                      try {
+                        element.innerHTML = response.articles[i].content.substring(0,60) + "...";
+                      }
+                      catch {
+                        document.getElementById("art").innerHTML = 'Esperando...'+ err.message;
+                      };
+                    
+                    }
+                    , 2000)
+
+                );
+                  }
+                catch(err){
+                  element.innerHTML = 'Esperando datos...' + err.message;
+                }
+        </script>
+      </aside>
+    </main>
+ -->
+
+    <footer>
+
+    </footer>
 
 
